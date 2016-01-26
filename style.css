@@ -1,0 +1,71 @@
+/*How to comment in CSS*/
+/*to add style to multiple individual sections make a class*/
+
+body {
+  background-image: linear-gradient(to bottom, #AB7143 , #972D07);
+  background-repeat: repeat-y;
+  border-style: solid;
+  border-color: #3D2000;
+  width:95%;
+  height:100%;
+
+  overflow: scroll;
+}
+
+.img-circle {
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 8px 0 8px 16px;
+    border: solid;
+    border-color: #AB7143;
+    text-decoration: none;
+
+}
+
+li a:hover {
+  color: #3D2000;
+  background-color: #D65226 ; 
+}
+
+
+h1 {
+  font-family: "Times New Roman";
+  font-size: 48px;
+  color: white;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  /*width: 110px;   <---- Why does it do what it does?
+  height: 80px;*/
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    font-weight: bold;
+
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+
+
