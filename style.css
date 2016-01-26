@@ -2,7 +2,8 @@
 /*to add style to multiple individual sections make a class*/
 
 body {
-  background-image: linear-gradient(to bottom, #AB7143 , #972D07);
+  background-color: #AB7143;
+  /*background-image: linear-gradient(to bottom, #AB7143 , #972D07);*/
   background-repeat: repeat-y;
   border-style: solid;
   border-color: #3D2000;
