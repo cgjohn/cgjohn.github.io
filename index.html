@@ -3,45 +3,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-
-	<meta charset ="UTF-8">
+	
 	<title>Connor's Personal Website</title>
 
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <script>
+    function displayGreeting () {
+      var d = new Date();
+      var hours = d.getHours();
+
+      if (hours < 12)
+      {
+        document.getElementsByTagName("h2")[0].innerHTML = "Good Morning!";
+      }
+      else if (hours < 17)
+      {
+        document.getElementsByTagName("h2")[0].innerHTML = "Good Afternoon!";     
+      }
+      else
+      {
+        document.getElementsByTagName("h2")[0].innerHTML = "Good Evening!";
+      }
+    }
+
+    function changeHeading (heading) {
+      document.getElementsByTagName("h3")[0].innerHTML = "howzit, howzit, howzit bruhhh?"
+    }
+
+    function restoreHeading (heading) {
+      document.getElementsByTagName("h3")[0].innerHTML = "howzit, bruh?"
+    }
+
+
+  </script>
 </head>
 
-<body>
-	<h2><img class="img-circle" src="me.png" width="100em" height="100em"></h2>
+<body onload = "displayGreeting();">
 
-	<ul class="m" >
-		<li> 
-			<a href="https://www.linkedin.com/in/connorjohnston" 
-			target="_blank">LinkedIn</a>
-		</li>
-		<li>
-			<a href="https://www.facebook.com/cjohn1234" target="_blank"> Facebook
-			</a>
-		</li>
-		<li> <a href="Resume.pdf" target="_blank"> Resume</a> 
-		</li>
-	</ul>
+		<div id="top">
+			<img id="top_pic" src="me.png" width="100em" height="100em">
+		</div>
+
+		<h1>
+			<h2 = ></h2> I'm Connor!
+		</h1>
+
+	<p>I am a student at the University of Michigan with a love for event planning, computer science, and travel. If you would like to chat, shoot me an <a href="mailto:cgjohn@umich.edu">email</a> or a message on <a href="https://www.facebook.com/cjohn1234">Facebook</a>. </p>
+
+	<h6> 
+		Here are some things I am involved in:
+	</h6>
+
+	<div class="frame">
+		<p class="left" height="150px"> I was the logistics Director for the sixth iteration of one of the nations pemier hackathaons: MHacks. I am currently the logistics director for the 8th iteration as well. Here is what MHacks 6 looked like.
+		</p>
+    <img src="next.png" width="32" height="32" position="center">
+		<iframe id="video" width="186" height="105" src="https://www.youtube.com/embed/m4cTd1WbX1o" frameborder="0" allowfullscreen></iframe>
+		
+	</div>
+
+	<div class="line">
+    <img src="down-arrow.png" position="center, center">
+	</div>
 
 
-	<h1>
-		<i> Welcome <br> to my website </i>
-	</h1>
 
-	<p>
-		-Connor Johnston
-	</p>
-
-	<h2>
-		<!--Opens in a new tab-->
-		<a href="https://www.google.com/" target="_blank"> 
-			<img src="mountains-white.png" alt="Mountains" width="110" height="90">
-		</a>
-	<h2/>
-
+	 <div class="page-footer">
+		<a href="https://www.linkedin.com/in/connorjohnston" 
+			target="_blank"><img src="linkedin12.png" alt="LinkedIn"></a>
+		<a href="https://www.facebook.com/cjohn1234" target="_blank"><img src="facebook29.png" alt="Facebook"></a>
+		<a href="Resume.pdf" target="_blank"><img src="professional5.png" alt="Resume"></a>
+	</div>
 </body>
-
+	<!-- <footer class="page-footer">
+		<p>123 Your Street, Anytown, State 12345-6789 | Tel: (555) 555-5555</p>
+	</footer> -->
 </html>

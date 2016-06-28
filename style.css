@@ -1,72 +1,107 @@
 /*How to comment in CSS*/
 /*to add style to multiple individual sections make a class*/
 
+html {
+   /*margin: 0px;
+   height: 100%;
+   width: 100%;*/
+   color: white;
+}
+
 body {
   background-color: #AB7143;
-  /*background-image: linear-gradient(to bottom, #AB7143 , #972D07);*/
-  background-repeat: repeat-y;
-  border-style: solid;
-  border-color: #3D2000;
-  width:95%;
-  height:100%;
-
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+  background-image: url("mountain-transparent.png");
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 55% auto;
   overflow: scroll;
+  /*border: 2px solid white;*/
 }
 
-.img-circle {
+#top {
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.line {
+  height: 100px;
+  width: 75px;
+  border: 1px solid #972D07;
+  background-color: #C1592C;
+  margin-right: auto;
+  margin-left: auto; 
+}
+
+.left {
+
+  height: 150px;
+  width: 200px;
+  border: 1px solid #972D07;
+  border-radius: 5px;
+  background-color: #C1592C;
+  /*float: center;*/
+  display: inline-block;
+}
+
+iframe {
+  /*float: center;*/
+  display: inline-block;
+}
+#down{
+  position: center, center;
+}
+#top_pic {
     border-radius: 50%;
-    text-align: center;
+    background-position: top right;    
+    margin-top: 1em;
 }
-
-
-
-ul {
-    text-align: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: none;
-}
-
-li a {
-    display: block;
-    color: white;
-    padding: 8px 0 8px 16px;
-    border: solid;
-    border-color: #AB7143;
-    text-decoration: none;
-
-}
-
-li a:hover {
-  color: #3D2000;
-  background-color: #D65226 ; 
-}
-
 
 h1 {
-  font-family: "Times New Roman";
+  font-family: 'Lora', serif;
   font-size: 48px;
   color: white;
   text-align: center;
 }
-h2 {
+
+h6{
+  font-family: 'Lora', serif;
+  font-size: 24px;
+  color: white;
   text-align: center;
-  /*width: 110px;   <---- Why does it do what it does?
-  height: 80px;*/
+}
+
+div {
+    text-decoration: none;
+    bottom: 1px;
+    text-align: center;
 }
 
 p {
-    font-family: "Times New Roman";
-    font-size: 20px;
-    font-weight: bold;
-
-    color: white;
-    text-align: center;
-    text-decoration: underline;
-
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  font-size: 16px;
 }
+
+a {
+  color: blue;
+}
+
+
+
+.page-footer {
+  position: bottom;
+  height: 50px;
+  clear: both;
+  text-align: center;
+}
+
+
+
 
 
 
