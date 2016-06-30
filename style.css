@@ -1,4 +1,7 @@
 
+* {
+  box­sizing: border­box;
+}
 
 .left{
   float: left;
@@ -9,6 +12,18 @@
   left: 50%;
   transform: translate(-50%,0);
 }
+ .box{
+  width: 100%;
+  height: 300px;
+  
+ }
+
+ .box-IX{
+  width: 100%;
+  height: 300px;
+  border-radius: 50%;
+  
+ }
 
 .page {
   position: relative;
@@ -17,13 +32,36 @@
 }
 
 .nav-txt {
+
   color: white;
   font-size: 20px;
   font-family: Oxygen;
   font-weight: 200;
+  transition: transform 1s;
   
 }
+
+.nav-txt:hover {
+  transform: rotatex(5deg);
+}
+
+.nav-txt:active {
+  background-color: transparent;
+}
+
+
 .hero-img {
+  position: absolute;
+  height: 25%;
+  width: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.hero-img-alt{
+  display: none;
   position: absolute;
   height: 25%;
   width: 25%;
@@ -32,51 +70,61 @@
   transform: translate(-50%, -50%);
 }
 
+.hero-img:hover + .hero-img-alt{
+  display: inline-block;
+}
+
 .main {
   position: relative;
   padding-bottom: 700px;
   text-align: center;
-  background-image: linear-gradient(30deg, #FF8967 0%, #45ADA8 100%);
+  background-image: linear-gradient(30deg, #FF8967 -10%, #45ADA8 100%);
 }
 
 .me {
-  height: 25%;
-  width: 25%;
+  width: 300px;
+  height: auto;
+  margin: auto;
 }
 
-p{
-  font-family: raleway 300;
+.blurb {
+  font-family: oxygen 300;
   padding-left: 5%;
   padding-right: 5%;
+  font-size: 20px;
 }
 
+.accomp-txt-l {
+  padding-left: 15%;
+}
+
+.year {s
+  color: 
+}
 .timeline {
+    margin-bottom: 50px;
     white-space:nowrap;
     overflow-x: scroll;
     padding:30px 0 10px 0;
     position:relative;
 }
 
-.hidden {
-  display: none;
-}
-
-.entry:hover + hidden {
-  display: block;
-
+.proj-main{
+  background-color: rgba(69,173,168,.1)
+  
 }
 
 .entry {
     display:inline-block;
     vertical-align:top;
-    background:#13519C;
+    background: rgba(255,137,103,.3);
     color:#fff;
     padding:10px;
     font-size:12px;
     text-align:center;
     position:relative;
-    border-top:4px solid #06182E;
-    border-radius:3px;
+    border-top:4px solid #45ADA8;
+    border-radius:10px;
     min-width:200px;
     max-width:500px;
 }
@@ -95,7 +143,7 @@ p{
     width:7px;
     height:7px;
     border-radius:6px;
-    border:3px solid #06182E;
+    border:3px solid #45ADA8;
     position:absolute;
     left:50%;
     top:-30px;
@@ -105,7 +153,7 @@ p{
 .entry:before {
     content:'';
     display:block;
-    background:#06182E;
+    background:#45ADA8;
     width:5px;
     height:20px;
     position:absolute;
@@ -116,8 +164,8 @@ p{
 
 .entry h1 {
     color:#fff;
-    font-size:18px;
-    font-family:Georgia, serif;
+    font-size:16px;
+    font-family:oxygen 400, serif;
     font-weight:bold;
     margin-bottom:10px;
 }
@@ -126,24 +174,71 @@ p{
     letter-spacing:.2em;
     margin-bottom:10px;
     font-size:14px;
+    font-family: oxygen 300;
 }
 
 .bar {
+    margin-top: 50px;
     height:4px;
-    background:#eee;
+    background:#504F4F;
     width:100%;
     position:relative;
     top:13px;
     left:0;
 }
 
-span.dropt {border-bottom: thin dotted; background: #ffeedd;}
-span.dropt:hover {text-decoration: none; background: #ffffff; z-index: 6; }
-span.dropt span {position: absolute; left: -9999px;
-  margin: 20px 0 0 0px; padding: 3px 3px 3px 3px;
-  border-style:solid; border-color:black; border-width:1px; z-index: 6;}
-span.dropt:hover span {left: 2%; background: #ffffff;} 
-span.dropt span {position: absolute; left: -9999px;
-  margin: 4px 0 0 0px; padding: 3px 3px 3px 3px; 
-  border-style:solid; border-color:black; border-width:1px;}
-span.dropt:hover span {margin: 20px 0 0 170px; background: #ffffff; z-index:6;} 
+.square{
+  position: relative;
+  height: 200px;
+  width: 200px;
+
+  display: inline-block;
+  /*border: 2px solid black;*/
+}
+
+.square-IX{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: inline-block;
+  /*border: 2px solid black;*/
+}
+
+.project {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  height: 100%;
+  
+}
+
+.social{
+  width: 40px;
+}
+
+.page-footer {
+   position: bottom;
+   height: 50px;
+   text-align: center;
+}
+
+.navbar-default.navbar-shrink {
+        padding: 10px 0;
+        /*background-image: linear-gradient(45deg, #2D2A32 0%, #0B3954 100%);*/
+        background-image: linear-gradient(45deg, #031C68 0%, #748CAB 100%);
+    }
+
+#about {
+  padding-top: 50px;
+}
+
+#projects {
+  padding-top: 50px;
+}
+
+@media(max-width: 760px){
+  #timeline {
+    display: none;
+  }
+}
