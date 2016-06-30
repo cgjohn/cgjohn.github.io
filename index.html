@@ -8,8 +8,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -18,69 +17,99 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
-  <script>
-    function displayGreeting () {
-      var d = new Date();
-      var hours = d.getHours();
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-      if (hours < 12)
-      {
-        document.getElementsByTagName("h2")[0].innerHTML = "Good Morning!";
-      }
-      else if (hours < 17)
-      {
-        document.getElementsByTagName("h2")[0].innerHTML = "Good Afternoon!";     
-      }
-      else
-      {
-        document.getElementsByTagName("h2")[0].innerHTML = "Good Evening!";
-      }
-    }
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-  </script>
-</head>
-
-<body onload = "displayGreeting();">
-
-		<div id="top">
-			<img id="top_pic" src="me.png" width="100em" height="100em">
-		</div>
-
-		<h1>
-			<h2 = ></h2> I'm Connor!
-		</h1>
-
-	<p>I am a student at the University of Michigan with a love for event planning, computer science, and travel. If you would like to chat, shoot me an <a href="mailto:cgjohn@umich.edu">email</a> or a message on <a href="https://www.facebook.com/cjohn1234">Facebook</a>. </p>
-
-	<h6> 
-		Here are some things I am involved in:
-	</h6>
-
-	<div class="frame">
-		<p class="left" height="150px"> I was the logistics Director for the sixth iteration of one of the nations pemier hackathaons: MHacks. I am currently the logistics director for the 8th iteration as well. Here is what MHacks 6 looked like.
-		</p>
-    <img src="next.png" width="32" height="32" position="center">
-		<iframe id="video" width="186" height="105" src="https://www.youtube.com/embed/m4cTd1WbX1o?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
-		
-	</div>
-
-	<div class="line">
-    <img id="down" src="down-arrow.png " width="32" height="32" position="center, center">
-	</div>
-
-  <div>
-    <p class="left" height="150px"> I am also involved with a nonprofit called <a href="https://www.b4pglobal.org">Blueprints for Pangaea</a>. The organization works to reallocate unused medical supplies in the US to countries in need. I am in charge of the website for the organization.
-    </p>
-  </div>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 
+  <html>
+  <body>
+      <nav class="navbar navbar-light bg-faded navbar-fixed-top clearfix">
+        <ul class="nav navbar-nav align-nav ">
+          <li class="nav-item">
+            <a class="nav-link nav-txt" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-txt" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-txt" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav> <!-- nav -->
 
-	 <div class="page-footer">
-		<a href="https://www.linkedin.com/in/connorjohnston" 
-			target="_blank"><img src="linkedin12.png" alt="LinkedIn"></a>
-		<a href="https://www.facebook.com/cjohn1234" target="_blank"><img src="facebook29.png" alt="Facebook"></a>
-		<a href="Resume.pdf" target="_blank"><img src="professional5.png" alt="Resume"></a>
-	</div>
-</body>
-	
-</html>
+     <div class="main">
+        <div class="container-fluid ">
+            <div class="row">
+              <img class="hero-img img-responsive" src="sunset.png" >
+            </div>
+        </div>
+    </div>
+        <div class="container-fluid" id="about">
+            <div>
+              <div class="col-lg-4 left "text-align="center">
+                <img class="me img-responsive img-circle " src="me.png" >
+              </div>
+              <div class="left col-lg-8">
+                  <p>Twee chambray small batch pinterest, taxidermy godard pug kale chips man braid kickstarter. Crucifix deep v keffiyeh, dreamcatcher pabst viral meh hoodie selvage blog chambray 90's hella offal. Leggings kinfolk venmo bushwick hoodie. Ennui scenester typewriter, shoreditch gastropub selfies 3 wolf moon. IPhone cliche flannel, normcore taxidermy chambray tilde biodiesel vinyl pork belly farm-to-table knausgaard. Biodiesel bushwick mixtape sriracha, distillery selfies celiac echo park keffiyeh kitsch dreamcatcher chicharrones viral ethical brunch. Jean shorts mlkshk fanny pack, craft beer tumblr polaroid normcore art party +1 shoreditch.</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="bar"></div>
+        <div class="timeline">
+          <div class="entry">
+            <h1>1990</h1>
+            <h2>Entry Title</h2>
+            <span class="dropt" title="Title for the pop-up">Hot Zone Text
+                <span style="width:500px;">Pop-up text</span>
+            </span>
+            
+          </div>
+          <div class="entry">
+            <h1>1995</h1>
+            Here's the info about this date
+          </div>
+          <div class="entry">
+            <h1>2000</h1>
+            Here's the info about this date
+          </div>
+          <div class="entry">
+            <h1>2005</h1>
+            Here's the info about this date
+          </div>
+          <div class="entry">
+            <h1>2010</h1>
+            Here's the info about this date
+          </div>
+          <div class="entry">
+            <h1>1995</h1>
+            Here's the info about this date
+          </div>
+          <div class="entry">
+            <h1>2000</h1>
+            Here's the info about this date
+          </div>
+          <div class="entry">
+            <h1>2005</h1>
+            Here's the info about this date
+          </div>
+          <div class="entry">
+            <h1>2010</h1>
+            Here's the info about this date
+          </div>
+        </div>
+
+
+   <!--  <div class="container-fluid hero">
+
+    </div> -->
+
+  </body>
+  </html>

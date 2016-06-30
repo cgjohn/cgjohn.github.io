@@ -1,107 +1,149 @@
-/*How to comment in CSS*/
-/*to add style to multiple individual sections make a class*/
 
-html {
-   /*margin: 0px;
-   height: 100%;
-   width: 100%;*/
-   color: white;
-}
 
-body {
-  background-color: #AB7143;
-  margin: 0px;
-  min-height: 100%;
-  width: 100%;
-  background-image: url("mountain-transparent.png");
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 55% auto;
-  overflow: scroll;
-  /*border: 2px solid white;*/
-}
-
-#top {
-  text-align: right;
-  padding-right: 20px;
-  padding-top: 20px;
-}
-.line {
-  height: 100px;
-  width: 75px;
-  border: 1px solid #972D07;
-  background-color: #C1592C;
-  margin-right: auto;
-  margin-left: auto; 
-}
-
-.left {
-
-  height: 150px;
-  width: 200px;
-  border: 1px solid #972D07;
-  border-radius: 5px;
-  background-color: #C1592C;
-  /*float: center;*/
+.left{
+  float: left;
   display: inline-block;
 }
-
-iframe {
-  /*float: center;*/
-  display: inline-block;
-}
-#down{
-  position: center, center;
-}
-#top_pic {
-    border-radius: 50%;
-    background-position: top right;    
-    margin-top: 1em;
+.align-nav {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
 }
 
-h1 {
-  font-family: 'Lora', serif;
-  font-size: 48px;
-  color: white;
+.page {
+  position: relative;
+  padding-bottom: 700px;
   text-align: center;
 }
 
-h6{
-  font-family: 'Lora', serif;
-  font-size: 24px;
+.nav-txt {
   color: white;
+  font-size: 20px;
+  font-family: Oxygen;
+  font-weight: 200;
+  
+}
+.hero-img {
+  position: absolute;
+  height: 25%;
+  width: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main {
+  position: relative;
+  padding-bottom: 700px;
   text-align: center;
+  background-image: linear-gradient(30deg, #FF8967 0%, #45ADA8 100%);
 }
 
-div {
-    text-decoration: none;
-    bottom: 1px;
-    text-align: center;
+.me {
+  height: 25%;
+  width: 25%;
 }
 
-p {
-  padding-left: 20px;
-  padding-right: 20px;
-  color: white;
-  font-size: 16px;
+p{
+  font-family: raleway 300;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-a {
-  color: blue;
+.timeline {
+    white-space:nowrap;
+    overflow-x: scroll;
+    padding:30px 0 10px 0;
+    position:relative;
 }
 
-
-
-.page-footer {
-  position: bottom;
-  height: 50px;
-  clear: both;
-  text-align: center;
+.hidden {
+  display: none;
 }
 
+.entry:hover + hidden {
+  display: block;
 
+}
 
+.entry {
+    display:inline-block;
+    vertical-align:top;
+    background:#13519C;
+    color:#fff;
+    padding:10px;
+    font-size:12px;
+    text-align:center;
+    position:relative;
+    border-top:4px solid #06182E;
+    border-radius:3px;
+    min-width:200px;
+    max-width:500px;
+}
 
+.entry img {
+    display:block;
+    max-width:100%;
+    height:auto;
+    margin-bottom:10px;
+}
 
+.entry:after {
+    content:'';
+    display:block;
+    background:#eee;
+    width:7px;
+    height:7px;
+    border-radius:6px;
+    border:3px solid #06182E;
+    position:absolute;
+    left:50%;
+    top:-30px;
+    margin-left:-6px;
+}
 
+.entry:before {
+    content:'';
+    display:block;
+    background:#06182E;
+    width:5px;
+    height:20px;
+    position:absolute;
+    left:50%;
+    top:-20px;
+    margin-left:-2px;
+}
+
+.entry h1 {
+    color:#fff;
+    font-size:18px;
+    font-family:Georgia, serif;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.entry h2 {
+    letter-spacing:.2em;
+    margin-bottom:10px;
+    font-size:14px;
+}
+
+.bar {
+    height:4px;
+    background:#eee;
+    width:100%;
+    position:relative;
+    top:13px;
+    left:0;
+}
+
+span.dropt {border-bottom: thin dotted; background: #ffeedd;}
+span.dropt:hover {text-decoration: none; background: #ffffff; z-index: 6; }
+span.dropt span {position: absolute; left: -9999px;
+  margin: 20px 0 0 0px; padding: 3px 3px 3px 3px;
+  border-style:solid; border-color:black; border-width:1px; z-index: 6;}
+span.dropt:hover span {left: 2%; background: #ffffff;} 
+span.dropt span {position: absolute; left: -9999px;
+  margin: 4px 0 0 0px; padding: 3px 3px 3px 3px; 
+  border-style:solid; border-color:black; border-width:1px;}
+span.dropt:hover span {margin: 20px 0 0 170px; background: #ffffff; z-index:6;} 
