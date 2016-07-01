@@ -18,10 +18,13 @@
   
  }
 
+.main-words {
+  display: none;
+}
  .student {
-  opacity: 0;
   color: white;
   font-family: Oxygen 300;
+  font-size: 48px;
     position: absolute;
     top: 15%;
     left: 50%;
@@ -29,7 +32,7 @@
  }
 
  .developer {
-    display: none;
+    font-size: 48px;
     color: white;
     font-family: Oxygen 300;
     position: absolute;
@@ -39,7 +42,7 @@
  }
 
  .traveler {
-  opacity: 0;
+  font-size: 48px;
   color: white;
   font-family: Oxygen 300;
     position: absolute;
@@ -81,13 +84,13 @@
   
 }
 
-.nav-txt:hover {
+/*.nav-txt:hover {
   transform: rotatex(5deg);
 }
 
 .nav-txt:active {
   background-color: transparent;
-}
+}*/
 
 
 .hero-img-cont {
@@ -108,9 +111,8 @@
 
 }
 
-.hero-img-cont:hover .developer{
-    display:  block;
-
+.hero-img-cont:hover .main-words{
+    display:  inherit;
 }
 
 .icon-link {
@@ -294,6 +296,8 @@
 
 .circle-foot:hover{
   box-shadow: 2px 2px 2px #888888;
+  bottom: 1px;
+  right: 1px;
 
 }
 
@@ -342,16 +346,6 @@
    text-align: center;
 }
 
-.nav>li>a:focus, .nav>li>a:hover {
-    text-decoration: none;
-    background-color: red;
-}
-
-.navbar-default.navbar-shrink {
-        padding: 10px 0;
-        /*background-image: linear-gradient(45deg, #2D2A32 0%, #0B3954 100%);*/
-        background-image: linear-gradient(45deg, #031C68 0%, #748CAB 100%);
-    }
 
 #about {
   padding-top: 50px;
