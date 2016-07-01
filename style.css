@@ -60,6 +60,12 @@
 
 }
 
+.icon-link {
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+}
+
 .hero-img-alt{
   display: none;
   position: absolute;
@@ -188,12 +194,17 @@
 }
 
 .square{
-  position: relative;
   height: 200px;
   width: 200px;
 
   display: inline-block;
   /*border: 2px solid black;*/
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  background-color: red;
+  border: 2px solid red;
 }
 
 .square-IX{
@@ -219,8 +230,15 @@
 
 .page-footer {
    position: bottom;
+   margin-top: 50px;
+   margin-bottom: 30px;
    height: 50px;
    text-align: center;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: red;
 }
 
 .navbar-default.navbar-shrink {
