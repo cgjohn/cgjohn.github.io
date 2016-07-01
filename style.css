@@ -18,11 +18,51 @@
   
  }
 
+ .student {
+  opacity: 0;
+  color: white;
+  font-family: Oxygen 300;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,0); 
+ }
+
+ .developer {
+    display: none;
+    color: white;
+    font-family: Oxygen 300;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%); 
+ }
+
+ .traveler {
+  opacity: 0;
+  color: white;
+  font-family: Oxygen 300;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%); 
+ }
+
  .box-IX{
   width: 100%;
   height: 300px;
   border-radius: 50%;
   
+ }
+
+ .box-B4P{
+    background-image: url(B4P.svg);
+    background-size: cover;
+
+ }
+
+ .navbar-collapse {
+  color: red;
  }
 
 .page {
@@ -48,23 +88,7 @@
 .nav-txt:active {
   background-color: transparent;
 }
- /*.hero-img-cont::before{
-    transition: all 5s;
- }*/
 
- .hero-img-cont:hover {
-  
- }
-
-/*.hero-img {
-  position: absolute;
-  height: 25%;
-  width: 25%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-}*/
 
 .hero-img-cont {
   position: absolute;
@@ -76,11 +100,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%; 
-  transition: background-image .5s;
+  transition: all .5s;
 }
 
 .hero-img-cont:hover {
   background-image: url(sunset.png);
+
+}
+
+.hero-img-cont:hover .developer{
+    display:  block;
+
 }
 
 .icon-link {
@@ -127,7 +157,7 @@
   padding-left: 15%;
 }
 
-.year {s
+.year {
   color: 
 }
 .timeline {
@@ -139,7 +169,8 @@
 }
 
 .proj-main{
-  background-color: rgba(69,173,168,.1)
+  background-color: rgba(69,173,168,.1);
+  padding-bottom: 50px;
   
 }
 
@@ -224,6 +255,15 @@
   /*border: 2px solid black;*/
 }
 
+.square-1{
+  width: 160px;
+  
+
+  display: inline-block;
+  /*border: 2px solid black;*/
+}
+
+.
 .nav-link:hover {
   text-decoration: none;
   background-color: red;
@@ -237,6 +277,49 @@
   border-radius: 50%;
   display: inline-block;
   /*border: 2px solid black;*/
+}
+
+.circle-foot{
+  position: relative;
+  height: 50px;
+  width: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  /*border: 2px solid black;*/
+  transition: all .2s;
+
+}
+
+.circle-foot:hover{
+  box-shadow: 2px 2px 2px #888888;
+
+}
+
+.resume {
+  background-image: url(resume.png);
+  background-size: cover;
+}
+
+.email {
+  background-image: url(email.png);
+  background-size: cover;
+}
+
+.facebook {
+  background-image: url(facebook.svg);
+  background-size: cover;
+}
+
+.github {
+  background-image: url(github-social-logo.svg);
+  background-size: cover;
+}
+
+.linkedin {
+  background-image: url(linkedin.png);
+  background-size: cover;
 }
 
 .project {
@@ -278,8 +361,17 @@
   padding-top: 50px;
 }
 
-@media(max-width: 760px){
+@media(max-width: 768px){
   #timeline {
     display: none;
+  }
+  .accomp-img {
+    position: relative;
+    top: 50px;
+  }
+
+  .accomp-txt {
+    position: relative;
+    top: -30px;
   }
 }
