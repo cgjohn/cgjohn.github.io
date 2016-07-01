@@ -48,9 +48,15 @@
 .nav-txt:active {
   background-color: transparent;
 }
+ /*.hero-img-cont::before{
+    transition: all 5s;
+ }*/
 
+ .hero-img-cont:hover {
+  
+ }
 
-.hero-img {
+/*.hero-img {
   position: absolute;
   height: 25%;
   width: 25%;
@@ -58,6 +64,23 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+}*/
+
+.hero-img-cont {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background-image: url(name-logo.png);
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%; 
+  transition: background-image .5s;
+}
+
+.hero-img-cont:hover {
+  background-image: url(sunset.png);
 }
 
 .icon-link {
