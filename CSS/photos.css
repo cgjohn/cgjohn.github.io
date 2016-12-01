@@ -7,21 +7,27 @@ body {
 }
 
 h1 {
+
+	/*centers the text but can't be best way to do it
+
+	position: relative;
+	left: -2.5%;*/
+
 	margin-top: 20px;
-	text-align: center;
 	text-decoration: underline;
 	display: inline-block;
 }
 
 .header  {
 	text-align: center;
+
 }
 
 .back{
 	float: left;
 	width: 50px;
 	margin-left: 1.66%;
-	margin-top: 5px;
+	margin-top: 7px;
 }
 
 .back:hover{
@@ -34,21 +40,50 @@ h1 {
 }
 
 .photo {
-  border-radius: 2px;
   height: auto;
   float: left;
-  width: 30%;
-  margin: 1.66%;
   opacity: .5;
   border-radius: 10px;
   transition: all .5s;
+
+}
+
+.vertical {
+	width: 22.5%;
+	margin: 1%;
+	height: auto;
+}
+
+.horizontal {
+  width: 30%;
+  margin: 1.66%;
 }
 
 .photo:hover {
 	opacity: 1;
-	border-radius: 25px;	
+	border-radius: 7%;	
 }
 
 .vertical {
 	transform: rotate(90deg);
+}
+
+@media(max-width: 768px){
+  .horizontal{
+  	width: 45%;
+  	margin: 2.5%;
+  }
+
+  .photo {
+  	opacity: 1;
+  	border-radius: 5%;
+  }
+
+}
+
+@media(max-width: 480px){
+  .horizontal{
+  	width: 95%;
+  	
+  }
 }
