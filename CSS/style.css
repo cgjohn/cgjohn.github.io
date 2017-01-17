@@ -16,7 +16,7 @@
  .box{
   width: 100%;
   height: 200px;
-  margin: 25px;
+/*  margin: 25px;*/
 
  }
 
@@ -182,7 +182,6 @@
 }
 
 
-
 .nav-link:hover {
   text-decoration: none;
   background-color: red;
@@ -305,10 +304,6 @@ hr{
   
 }
 
-.social{
-  width: 40px;
-}
-
 .page-footer {
    position: bottom;
    padding-top: 20px;
@@ -338,9 +333,6 @@ hr{
   .accomp-txt {
     position: relative;
     top: -30px;
-    margin-left: 10%;
-    margin-right: 10%;
-
   }
 
   .align-nav {
