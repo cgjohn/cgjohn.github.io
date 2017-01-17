@@ -9,16 +9,16 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" type="text/css" href="CSS/style.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
 
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
@@ -26,33 +26,54 @@
 
   <html>
   <body>
-      <nav class="navbar navbar-fixed-top">
-        <ul class="nav navbar-nav align-nav">
-          <li class="nav-item ">
-            <a class="nav-link nav-txt" href="#about">About</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link nav-txt" href="#projects">Accomplishments</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-txt" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav> <!-- nav -->
+
+    <!-- Created the nav bar -->
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">   
+          <ul class="nav navbar-nav align-nav">
+            <li class="nav-item ">
+              <a class="nav-link nav-txt" href="#about">About</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link nav-txt" href="#projects">Accomplishments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-txt" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+
+    <!-- The hero page -->
      <div class="main ">
         <div class="container-fluid ">
-              <div class="row clearfix">
+            <div class="row clearfix">
 
-              <div class="hero-img-cont">
+              <div class="hero-img-cont"></div>
 
-              </div>
               <div class="main-words">
                 <div class="student">
                   <p>Student<p>
                 </div>
+
                 <div class="developer">
                   <p>Developer<p>
                 </div>
+
                 <div class="traveler">
                   <p>Traveler<p>
                 </div>
@@ -61,168 +82,152 @@
             </div>
         </div>
     </div>
-        <div class="container-fluid" id="about">
-              <div class="col-lg-4 left box">
-                <img class="me img-responsive img-circle " src="Images/me.png" >
-              </div>
-              <div class="left col-lg-8">
-                  <h4 class="blurb">Hey!</h4>
-                  <p class="blurb"> I'm Connor. I am a rising junior at the University of Michigan studying computer science with a minor in entrepreneurship. When I am not doing school work I spend most of my time either playing tennis or working on improving the organizations I am a part of on campus.</p>
-              </div>
+
+    <!-- Introduction to me section -->
+    <div class="container-fluid" id="about">
+      <div class="col-xs-12">
+        <img class="selfie img-responsive img-circle " src="Images/me.png" >
+      </div>
+      <div class="col-xs-12 blurb">
+          <h4>Hey!</h4>
+          <p > I'm Connor. I am a rising junior at the University of Michigan studying computer science with a minor in entrepreneurship. When I am not doing school work I spend most of my time either playing tennis or working on improving the organizations I am a part of on campus.</p>
+      </div>
+    </div>
+
+    <!-- Projects and Orgs -->
+    <!-- MHacks -->
+    <div class="container-fluid proj-main" id="projects">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 accomp-img box">
+          <img class="square img-responsive project" src="Images/MHacks.png">
+        </div>
+        <div class="col-xs-12 ">
+          <div class="blurb">
+            <h4><a href="http://mhacks.org/">MHacks:</a><h4><br>
+            <p class="accomp-txt">
+              MHacks is one of the worlsd's premier collegiate hackathons. The event is hosted for 36 hours by students at the University of Michigan. My role in the organization is Director of Logistics for the 2,000 person event. This role includes transportation, food, and budgeting for the event. I have been involved for the past four events now and directed two of them.
+            </p>
+          </div>  
+        </div>
+      </div>
+
+      <!-- B4P -->
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-4 box ">
+          <img class="img-responsive" src="Images/B4P.svg">
+        </div>
+        <div class="col-xs-12 ">
+          <h4>
+            <a href="b4pglobal.org">Blueprints for Pangaea:</a>
+          <h4>
+          <br>
+          <p class="blurb">
+
+            Blueprints For Pangaea (B4P) is a 501(c)(3) not-for-profit medical surplus recovery organization (MSRO) that provides sustainable solutions to inefficient health care resource distribution. We work with hospitals around the nation to collect their unused medical supplies and ship them to third world countries in need. My role as CTO within the organization puts me in charge of the design and creation of our current website. 
+           
+          </p>  
+        </div>
+      </div>
+
+      <!-- iX -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 accomp-img box">
+
+          <img class=" square-IX img-responsive project" src="Images/i_X.png">
+
         </div>
 
-        <!-- <div class="container-fluid" id="timeline">
-            <div class="bar"></div>
-          <div class="timeline">
-            <div class="entry">
-              <h1 class="year">1996</h1>
-              I was born.
-              
-            </div>
-            <div class="entry">
-              <h1 class="year">2000</h1>
-              I join the world of learning
-            </div>
-            <div class="entry">
-              <h1 class="year">2004</h1>
-              My first time playing tennis
+        <div class="col-xs-12 ">
 
-            </div>
-            <div class="entry">
-              <h1 class="year">2000</h1>
-              I join the world of learning
-            </div>
-            <div class="entry">
-              <h1 class="year">2004</h1>
-              My first time playing tennis
+            <h4><a href="ixperience.co.za">iXperience:</a><h4> <br>
 
-            </div>
-            <div class="entry">
-              <h1 class="year">2000</h1>
-              I join the world of learning
-            </div>
-            <div class="entry">
-              <h1 class="year">2004</h1>
-              My first time playing tennis
+            <p class="blurb accomp-txt">
 
-            </div>
-            <div class="entry">
-              <h1 class="year">2000</h1>
-              I join the world of learning
-            </div>
-            <div class="entry">
-              <h1 class="year">2004</h1>
-              My first time playing tennis
+               IXperience is a month long coding bootcamp in the beautiful city of Cape Town, South Africa. Through the program I learned HTML, CSS, and Angular JS. At the end of the bootcamp I was matched with a local company in which I served as an intern and was able to expand my knowledge of Angular in a work environment. 
 
-            </div>
-            <div class="entry">
-              <h1 class="year">2005</h1>
-              I leave the country for the first time
-            </div>
-            <div class="entry">
-              <h1 class="year">2014</h1>
-              I graduate High School
-            </div>
-            <div class="entry">
-              <h1 class="year">2014</h1>
-              I am now a Michigan Wolverine!
-            </div>
-            <div class="entry">
-              <h1 class="year">2016</h1>
-              I go to Cape Town!
-            </div>
-          </div>
-        </div> -->
-
-         <!--  <div class="row">
-            <div class=" clearfix col-xs-12 col-md-6 col-lg-4">
-                <img class="square img-responsive project" src="i_X.png">
-              </div>
-              <div class=" clearfix col-xs-12 col-md-6 col-lg-4">
-                <img class="col-xs-12 col-md-6 col-lg-4 square img-responsive project" src="B4P.svg">
-              </div>
-               <div class=" clearfix col-xs-12 col-md-6 col-lg-4">
-                <img class="square img-responsive project" src="i_X.png">
-              </div>
-         </div> -->
-              
+            </p>
         </div>
+      </div>
 
-        <div class="container-fluid proj-main" id="projects">
-          <div class="row">
-            <div class="col-xs-12 col-sm-4 accomp-img box">
-              <img class=" square img-responsive project" src="Images/MHacks.png">
-            </div>
-            <div class="col-xs-12 col-sm-8 accomp-txt">
-              <h1 class="blurb">
-                <h4><a href="http://mhacks.org/">MHacks:</a><h4><br>
-                MHacks is one of the worlsd's premier collegiate hackathons. The event is hosted for 36 hours by students at the University of Michigan. My role in the organization is Director of Logistics for the 2,000 person event. This role includes transportation, food, and budgeting for the event. I have been involved for the past four events now and directed two of them.
-              </h1>
-            </div>
-          </div>
-            <div class="row">
-               <div class="col-xs-12 col-sm-4 accomp-img box ">
-                  <img class="square-1 img-responsive project" src="Images/B4P.svg">
-                
-              </div>
-              <div class="col-xs-12 col-sm-8 ">
-                <h1 class="blurb accomp-txt">
-                  <h4><a href="b4pglobal.org">Blueprints for Pangaea:</a><h4> <br>
-                  Blueprints For Pangaea (B4P) is a 501(c)(3) not-for-profit medical surplus recovery organization (MSRO) that provides sustainable solutions to inefficient health care resource distribution. We work with hospitals around the nation to collect their unused medical supplies and ship them to third world countries in need. My role as CTO within the organization puts me in charge of the design and creation of our current website. 
-                </h1>
-              </div>
-             
-            </div>
-            <div class="row">
-            <div class="col-xs-12 col-sm-4 accomp-img box">
-              <img class=" square-IX img-responsive project" src="Images/i_X.png">
-            </div>
-            <div class="col-xs-12 col-sm-8 accomp-txt">
-              <h1 class="blurb">
-                <h4><a href="ixperience.co.za">iXperience:</a><h4> <br>
-                IXperience is a month long coding bootcamp in the beautiful city of Cape Town, South Africa. Through the program I learned HTML, CSS, and Angular JS. At the end of the bootcamp I was matched with a local company in which I served as an intern and was able to expand my knowledge of Angular in a work environment.
-              </h1>
-            </div>
-          </div>
-            <div class="row">
-              <div class="col-xs-12 col-sm-4 accomp-img box">
-                <img class=" square img-responsive project" src="Images/computer.png">
-              </div>
-              <div class="col-xs-12 col-sm-8 ">
-                <h1 class="blurb accomp-txt">
-                  <h4>Coding:<h4>
-                  <br>
-                  Coming into college I had never seen a line of code before in my life. I had an interest in technology but that was about as far as it went. Once in college I happened to come across MHacks my first week on campus. MHacks introduced me to the computer science community and I took my first CS course the following semester.  Three years later I am still expanding my CS knowledge and pursuing it as my major.
-                </h1>
-              </div>
-              
-            </div>
-          </div>
-
-          <div id="travels" class="container-fluid">
-            <h1 class="travels" >My Travels</h1>
-            <hr>
-
-            <div class="photo-cont">
-              <a href="cape_town.html"><img class="photos" src="Images/Cape_Town/Cape_Town.jpg"></a>
-              <h3>Cape Town</h3>
-            </div>
-            <div class="photo-cont">
-              <a href="victoria_falls.html"><img class="photos" src="Images/Victoria_Falls/falls8.jpg"></a>
-              <h3>Victoria Falls</h3>
-            </div>
-          </div>
-
-
-         <div class="page-footer container-fluid" id="contact">
-            <a href="https://www.facebook.com/cjohn1234" target="_blank"><div class="circle-foot facebook"></div></a>
-            <a href="Images/Resume.pdf" target="_blank"><div class="circle-foot resume"></div></a>
-            <a href="https://github.com/cgjohn" target="_blank"><div class="circle-foot github"></div></a>
-            <a href="https://www.linkedin.com/in/connorjohnston" target="_blank"><div class="circle-foot linkedin"></div></a>
-            <a href="mailto:cgjohn@umich.edu" target="_blank"><div class="circle-foot email"></div></a>
-          </div>
-
+      <!-- Coding -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 accomp-img box">
+          <img class=" square img-responsive project" src="Images/computer.png">
         </div>
+        <div class="col-xs-12 ">
+          <div class="blurb accomp-txt">
+            <h4>Coding:</h4>
+
+            <br>
+
+            <p class="blurb accomp-txt">
+            Coming into college I had never seen a line of code before in my life. I had an interest in technology but that was about as far as it went. Once in college I happened to come across MHacks my first week on campus. MHacks introduced me to the computer science community and I took my first CS course the following semester.  Three years later I am still expanding my CS knowledge and pursuing it as my major.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Travel section -->
+    <div id="travels" class="container-fluid">
+      <h1 class="travels" >My Travels</h1>
+      <hr>
+
+      <div class="photo-cont">
+        <a href="cape_town.html"><img class="photos" src="Images/Cape_Town/Cape_Town.jpg"></a>
+        <h3>Cape Town</h3>
+      </div>
+      <div class="photo-cont">
+        <a href="victoria_falls.html"><img class="photos" src="Images/Victoria_Falls/falls8.jpg"></a>
+        <h3>Victoria Falls</h3>
+      </div>
+    </div>
+ 
+    <!-- footer buttons -->
+    <div class="page-footer container-fluid" id="contact">
+        <a href="https://www.facebook.com/cjohn1234" target="_blank">
+          <div class="circle-foot facebook">
+          </div>
+        </a>
+
+        <a href="Images/Resume.pdf" target="_blank">
+          <div class="circle-foot resume">
+          </div>
+        </a>
+
+        <a href="https://github.com/cgjohn" target="_blank">
+          <div class="circle-foot github">
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/connorjohnston" target="_blank">
+          <div class="circle-foot linkedin">
+          </div>
+        </a>
+
+        <a href="mailto:cgjohn@umich.edu" target="_blank">
+          <div class="circle-foot email">
+          </div>
+        </a>
+    </div>
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous">
+    </script>
+
+    <script 
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+      crossorigin="anonymous">
+    </script>
+
+
 
   </body>
   </html>

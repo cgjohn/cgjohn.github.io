@@ -1,0 +1,321 @@
+* {
+  box­sizing: border­box;
+}
+
+.left{
+  float: left;
+  display: inline-block;
+}
+
+.align-nav {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+ .box{
+  width: 100%;
+  height: 200px;
+  margin: 25px;
+ }
+
+.icon-bar {
+  border: 1px solid white;
+}
+
+.navbar-toggle {
+  border: 1px solid white;
+}
+
+.main-words {
+  display: none;
+}
+/* .student {
+  color: white;
+  font-family: Oxygen 300;
+  font-size: 48px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%,0); 
+ }
+
+ .developer {
+    font-size: 48px;
+    color: white;
+    font-family: Oxygen 300;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%); 
+ }
+
+ .traveler {
+  font-size: 48px;
+  color: white;
+  font-family: Oxygen 300;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%); 
+ }*/
+
+.box-IX{
+  width: 100%;
+  height: 300px;
+  border-radius: 50%;
+
+}
+
+.box-B4P{
+  background-image: url(../Images/B4P.svg);
+  background-size: cover;
+}
+
+.navbar {
+  background-color: #547980;
+}
+
+.navbar-collapse {
+  color: red;
+}
+
+.page {
+  position: relative;
+  padding-bottom: 700px;
+  text-align: center;
+}
+
+.nav-txt {
+  color: white;
+  font-size: 20px;
+  font-family: Oxygen;
+  font-weight: 200;
+  transition: all .6s;
+  position: relative;
+}
+
+.nav-txt:hover {
+  color: #547980;
+}
+
+.nav-text:active {
+  bottom: 1px;
+  right: 1px;
+}
+
+.nav-item {
+  background-color: #547980;
+}
+
+
+.hero-img-cont {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background-image: url(../Images/name-logo.png);
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%; 
+  transition: all .5s;
+}
+
+.hero-img-cont:hover {
+  background-image: url(../Images/sunset.png);
+
+}
+
+.hero-img-cont:hover .main-words{
+    display:  inherit;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+}
+
+
+.main {
+  position: relative;
+  padding-bottom: 700px;
+  text-align: center;
+  background-image: linear-gradient(30deg, #FF8967 -10%, #45ADA8 100%);
+}
+
+.selfie {
+  width: 300px;
+  height: auto;
+  margin: auto;
+}
+
+.blurb {
+  font-family: oxygen 300;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 16px;
+}
+
+
+.proj-main{
+  background-color: rgba(69,173,168,.1);
+  padding-bottom: 50px;
+  text-align: center; 
+}
+
+.square{
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+}
+
+.square-1{
+  width: 160px;
+  display: inline-block;
+}
+
+.
+.nav-link:hover {
+  text-decoration: none;
+  background-color: red;
+  border: 2px solid red;
+}
+
+.square-IX{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: inline-block;
+  /*border: 2px solid black;*/
+}
+
+#travels{
+  text-align: center;
+}
+
+hr{
+  width: 50%;
+}
+
+.travels {
+  padding: 5px;
+}
+
+.photo-cont {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.photos {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  transition: border-radius .5s;
+  opacity: .7;
+}
+
+.photos:hover {
+  opacity: 1;
+  border-radius: 5%;
+  width: 400px;
+}
+
+.photos:active {
+  opacity: .9;
+  margin-top: 1px;
+}
+
+.circle-foot{
+  position: relative;
+  height: 50px;
+  width: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  /*border: 2px solid black;*/
+  transition: all .2s;
+
+}
+
+.circle-foot:hover{
+  box-shadow: 2px 2px 2px #888888;
+  bottom: 1px;
+  right: 1px;
+
+}
+
+.social{
+  width: 40px;
+}
+
+.page-footer {
+   position: bottom;
+   padding-top: 20px;
+   margin-bottom: 30px;
+   height: 50px;
+   text-align: center;
+   background-color: white;
+}
+
+/*Footer images*/
+.resume {
+  background-image: url(../Images/resume.png);
+  background-size: cover;
+}
+
+.email {
+  background-image: url(../Images/email.png);
+  background-size: cover;
+}
+
+.facebook {
+  background-image: url(../Images/facebook.svg);
+  background-size: cover;
+}
+
+.github {
+  background-image: url(../Images/github-social-logo.svg);
+  background-size: cover;
+}
+
+.linkedin {
+  background-image: url(../Images/linkedin.png);
+  background-size: cover;
+}
+
+#about {
+  padding-top: 25px; 
+  padding-bottom: 25px;
+}
+
+#projects {
+  padding-top: 50px;
+}
+
+@media(max-width: 768px){
+  .accomp-img {
+    position: relative;
+    top: 50px;
+  }
+
+  .accomp-txt {
+    position: relative;
+    top: -30px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .align-nav {
+     position: relative; 
+     left: 0%; 
+     text-align: right;
+     transform: translate(0,0); 
+}
+
+}
