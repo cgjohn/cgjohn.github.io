@@ -208,28 +208,30 @@
 
 #travels{
   text-align: center;
+  margin-bottom: 45px;
 }
 
 hr{
   width: 50%;
 }
 
-.travels {
+.travel {
   padding: 5px;
 }
 
 .photo-cont {
   display: inline-block;
   float: left;
-  width: 50%;
+  /*width: 50%;*/
   text-align: center;
 }
 
 .photos {
   border-radius: 50%;
+  padding-top: 10px;
   height: 300px;
   width: 300px;
-  transition: border-radius .5s;
+  transition: border-radius .25s;
   opacity: .7;
 }
 
