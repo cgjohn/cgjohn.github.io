@@ -16,8 +16,6 @@
  .box{
   width: 100%;
   height: 200px;
-
-/*  margin: 25px;*/
  }
 
 .row {
@@ -36,41 +34,11 @@
 .main-words {
   display: none;
 }
-/* .student {
-  color: white;
-  font-family: Oxygen 300;
-  font-size: 48px;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%,0); 
- }
-
- .developer {
-    font-size: 48px;
-    color: white;
-    font-family: Oxygen 300;
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%,-50%); 
- }
-
- .traveler {
-  font-size: 48px;
-  color: white;
-  font-family: Oxygen 300;
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%,-50%); 
- }*/
 
 .box-IX{
   width: 100%;
   height: 300px;
   border-radius: 50%;
-
 }
 
 .box-B4P{
@@ -114,7 +82,6 @@
   background-color: #547980;
 }
 
-
 .hero-img-cont {
   position: absolute;
   height: 300px;
@@ -143,7 +110,6 @@
   font-size: 10px;
 }
 
-
 .main {
   position: relative;
   height: 100vh;
@@ -164,8 +130,6 @@
   padding-right: 5%;
   font-size: 16px;
 }
-
-
 
 .proj-main{
   background-color: rgba(69,173,168,.1);
@@ -190,8 +154,7 @@
 .nav-link:hover {
   text-decoration: none;
   background-color: red;
-/*  border: 2px solid red;
-*/}
+}
 
 .square-IX{
   position: relative;
@@ -199,19 +162,18 @@
   width: 200px;
   border-radius: 50%;
   display: inline-block;
-  /*border: 2px solid black;*/
 }
 
 .project {
   height: 100%;
 }
 
-#travels{
+#travels {
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
-hr{
+hr {
   width: 50%;
 }
 
@@ -228,7 +190,7 @@ hr{
 
 .photos {
   border-radius: 50%;
-  padding-top: 10px;
+  margin-top: 10px;
   height: 300px;
   width: 300px;
   transition: border-radius .25s;
@@ -237,8 +199,8 @@ hr{
 
 .photos:hover {
   opacity: 1;
-  border-radius: 5%;
   width: 400px;
+  border-radius: 7%;
 }
 
 .photos:active {
@@ -269,14 +231,6 @@ hr{
   width: 40px;
 }
 
-.page-footer {
-   position: bottom;
-   padding-top: 20px;
-   margin-bottom: 30px;
-   height: 50px;
-   text-align: center;
-   background-color: white;
-}
 
 /*Footer images*/
 
@@ -310,8 +264,8 @@ hr{
 
 .page-footer {
    position: bottom;
-   padding-top: 20px;
-   margin-bottom: 30px;
+   padding-top: 5px;
+   margin-bottom: 35px;
    height: 50px;
    text-align: center;
    background-color: white;
@@ -350,6 +304,6 @@ hr{
      left: 0%; 
      text-align: right;
      transform: translate(0,0); 
-}
+  }
 
 }
