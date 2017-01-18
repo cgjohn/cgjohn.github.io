@@ -16,9 +16,14 @@
  .box{
   width: 100%;
   height: 200px;
-/*  margin: 25px;*/
 
+/*  margin: 25px;*/
  }
+
+.row {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%
+}
 
 .icon-bar {
   border: 1px solid white;
@@ -185,8 +190,8 @@
 .nav-link:hover {
   text-decoration: none;
   background-color: red;
-  border: 2px solid red;
-}
+/*  border: 2px solid red;
+*/}
 
 .square-IX{
   position: relative;
@@ -195,6 +200,10 @@
   border-radius: 50%;
   display: inline-block;
   /*border: 2px solid black;*/
+}
+
+.project {
+  height: 100%;
 }
 
 #travels{
@@ -296,13 +305,7 @@ hr{
 }
 
 
-.project {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%,0);
-  height: 100%;
-  
-}
+
 
 .page-footer {
    position: bottom;
@@ -317,6 +320,7 @@ hr{
 #about {
   padding-top: 25px; 
   padding-bottom: 25px;
+  text-align: center;
 }
 
 #projects {
@@ -327,7 +331,12 @@ hr{
 
   .accomp-img {
     position: relative;
-    top: 50px;
+    top: 3px;
+  }
+
+  .square-IX {
+    position: relative;
+    top: -20px;
   }
 
   .accomp-txt {
