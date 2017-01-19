@@ -95,6 +95,27 @@
   transition: all .5s;
 }
 
+.down {
+  width: 50px;
+  position: relative;
+  top: 80vh;
+  opacity: .8;
+  transition: all, 1s;
+}
+
+.blink{
+  opacity: .5;
+  /*width: 49px;*/
+}
+
+.img-alt {
+  background-image: url(../Images/sunset.png);
+}
+
+.img-alt:hover {
+  background-image: url(../Images/name-logo.png);
+}
+
 .hero-img-cont:hover {
   background-image: url(../Images/sunset.png);
 
