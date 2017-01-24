@@ -103,6 +103,11 @@
   transition: all, 1s;
 }
 
+.down:active {
+  top: 81vh;
+
+}
+
 .blink{
   opacity: .5;
   /*width: 49px;*/
@@ -139,7 +144,6 @@
 }
 
 .selfie {
-
   width: 300px;
   height: auto;
   margin: auto;
@@ -152,21 +156,21 @@
   font-size: 16px;
 }
 
-.proj-main{
+.proj-main {
   background-color: rgba(69,173,168,.1);
   padding-bottom: 50px;
   text-align: center; 
 }
 
 
-.square{
+.square {
   height: 200px;
   width: 200px;
   display: inline-block;
 
 }
 
-.square-1{
+.square-1 {
   width: 160px;
   display: inline-block;
 }
@@ -177,7 +181,7 @@
   background-color: red;
 }
 
-.square-IX{
+.square-IX {
   position: relative;
   height: 200px;
   width: 200px;
@@ -281,8 +285,6 @@ hr {
 }
 
 
-
-
 .page-footer {
    position: bottom;
    padding-top: 5px;
@@ -297,11 +299,9 @@ hr {
   padding-top: 25px; 
   padding-bottom: 25px;
   text-align: center;
+
 }
 
-#projects {
-  padding-top: 50px;
-}
 
 @media(max-width: 768px){
 
@@ -327,4 +327,28 @@ hr {
      transform: translate(0,0); 
   }
 
+  .photos {
+    margin-top: 10px;
+    width: 80%;
+    height: 40%;
+    transition: border-radius .25s;
+  }
+
+  .photos:hover {
+    width: 80%;
+  }
+}
+
+@media(max-width: 1000px){
+
+  .photos {
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+    transition: border-radius .25s;
+  }
+
+  .photos:hover {
+    width: 100%;
+  }
 }
