@@ -1,5 +1,6 @@
 * {
   box­sizing: border­box;
+  font-family: oxygen;
 }
 
 body {
@@ -7,12 +8,7 @@ body {
 }
 
 h1 {
-
-	/*centers the text but can't be best way to do it
-
-	position: relative;
-	left: -2.5%;*/
-
+  
 	margin-top: 20px;
 
 	display: inline-block;
