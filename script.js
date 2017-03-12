@@ -8,7 +8,6 @@ var mainImg = document.querySelector(".hero-img-cont");
 
 // mainImg.style.backgroundImage = "url(Images/name-logo.png)";
 
-console.log("hello");
 // setInterval(swapImg, 6000);
 
 setInterval(

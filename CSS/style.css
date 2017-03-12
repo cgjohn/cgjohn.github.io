@@ -108,6 +108,8 @@
 
 }
 
+
+
 .blink{
   opacity: .5;
   /*width: 49px;*/
@@ -193,9 +195,13 @@
   height: 100%;
 }
 
+#work {
+  text-align: center;
+}
+
 #travels {
   text-align: center;
-  margin-bottom: 40px;
+  background-color: rgba(69,173,168,.1);
 }
 
 hr {
@@ -206,11 +212,26 @@ hr {
   padding: 5px;
 }
 
+.proj-img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.img {
+  height: 382px;
+
+}
+
+.proj {
+  margin: 30px 0px;
+}
+
 .photo-cont {
   display: inline-block;
   float: left;
   /*width: 50%;*/
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .photos {
@@ -231,6 +252,37 @@ hr {
 .photos:active {
   opacity: .9;
   margin-top: 1px;
+}
+
+.a {
+  border: 2px solid black;
+  text-align: center;
+}
+
+.b {
+  height: 50vh;
+}
+
+.c {
+  height: 70%;
+  width: 100%;
+  background-image: url(../Images/Bicycles.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.d {
+  height: 100%;
+}
+
+.e {
+  height: 30%;
+
+}
+
+.f {
+  vertical-align: middle;
 }
 
 .circle-foot{
@@ -308,6 +360,10 @@ hr {
   .accomp-img {
     position: relative;
     top: 3px;
+  }
+
+  .proj-img {
+    margin: 0px;
   }
 
   .square-IX {
