@@ -195,10 +195,6 @@
   height: 100%;
 }
 
-#work {
-  text-align: center;
-}
-
 #travels {
   text-align: center;
   background-color: rgba(69,173,168,.1);
@@ -254,35 +250,60 @@ hr {
   margin-top: 1px;
 }
 
-.a {
-  border: 2px solid black;
+.projects-cont {
   text-align: center;
+  margin-top: 30px;
 }
 
-.b {
-  height: 50vh;
-}
-
-.c {
-  height: 70%;
+.proj-img {
+  height: 35vh;
   width: 100%;
-  background-image: url(../Images/Bicycles.png);
+  margin: 3vh 0;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.d {
+.bike {
+  background-image: url(../Images/Bicycles.png);
+}
+.space {
+  background-image: url(../Images/space.png);
+}
+.music {
+  background-image: url(../Images/HomeMusic.png);
+}
+
+.color {
+  background-image: url(../Images/ColorGame.png);
+}
+
+.ticket {
+    background-image: url(../Images/TicketTracker.png);
+}
+
+.score {
+    background-image: url(../Images/Scorekeeper.png);
+}
+
+
+.caption-cont {
+  width: 80%;
+  height: 15vh;
+  margin: 0px 10% 20px;
+}
+
+.caption {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project-cont {
   height: 100%;
-}
-
-.e {
-  height: 30%;
-
-}
-
-.f {
-  vertical-align: middle;
+  margin-top: 20px;
 }
 
 .circle-foot{
@@ -341,6 +362,7 @@ hr {
    position: bottom;
    padding-top: 5px;
    margin-bottom: 35px;
+   margin-top: 25px;
    height: 50px;
    text-align: center;
    background-color: white;
@@ -393,6 +415,7 @@ hr {
   .photos:hover {
     width: 80%;
   }
+
 }
 
 @media(max-width: 1000px){

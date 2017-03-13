@@ -1,0 +1,159 @@
+h3{
+	font-size: 7vh;
+  margin-top: 70px;
+  line-height: 0;
+}
+h4 {
+  font-size: 3vh;
+  text-align: center;
+}
+
+.instr {
+  font-size: 1.25em;
+  color: #FF9200;
+  position: relative;
+  bottom: 10px;
+  left: 5px;
+
+}
+
+.reset {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border: none;
+  background-color:#51ad6a;
+  border-radius:42px;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:17px;
+  padding:16px 21px;
+  text-decoration:none;
+  outline: none;
+}
+
+.reset:hover{
+  opacity: .95;
+}
+
+.reset:active{
+  opacity: .9;
+  outline: none;
+}
+
+.centerTxt {
+	text-align: center;
+}
+
+.title {
+	font-size: 7vh;
+	color: #FF9200;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  top: -20px;
+}
+
+.numCont {
+  height: 50%;
+  margin-top: 15px;
+}
+
+.keyboard {
+  display: inline-block;
+}
+
+.score {
+	font-size: 30vh;
+	text-shadow: 4px 4px 4px rgba(148, 150, 150, 0.3);
+}
+.rightScore {
+	border-right: 1px solid #646363;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.radio {
+	text-align: center;
+	display: inline-block;
+	width: 100px;
+  margin: 18px;
+}
+
+label {
+	width: 0px;
+	padding-left: 0px;
+	margin: 0px;
+}
+ span::before, span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+label {
+	padding-left: 75px;
+}
+span.radio:hover {
+  cursor: pointer;
+}
+span.radio::before {
+  left: -52px;
+  width: 45px;
+  height: 25px;
+  background-color: #A8AAC1;
+  border-radius: 50px;
+}
+span.radio::after {
+  left: -49px;
+  width: 17px;
+  height: 17px;
+  border-radius: 10px;
+  background-color: #6C788A;
+  transition: left .25s, background-color .25s;
+}
+input[type="radio"]:checked + label span.radio::after {
+  left: -27px;
+  background-color: #FF9200;
+}
+
+.selectedPlayer {
+  font-size: 3vh;
+}
+
+.bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%,0);
+
+}
+
+.p2Txt {
+  margin-top: 5px;
+}
+
+.keyTxt {
+  position: relative;
+  top: 18px;
+}
+
+@media(max-width: 1000px){
+  .title{
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 2.5em;
+  }
+
+  .instr {
+    font-size: .75em;
+  }
+}

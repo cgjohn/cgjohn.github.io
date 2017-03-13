@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>ScoreKeeper</title>
+
+	  <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="scoreKeeper.css"></link>
+</head>
+<body>
+
+<button class="reset ">New Game</button>
+
+<!-- <div class="instructions">
+	<h4>Keep track of your game score!</h4>
+	<ol>
+		<li>Set your score</li>
+		<li></li>
+	</ol>
+
+
+</div> -->
+
+<div class="centerTxt container-fluid">
+	<h1 class="title">ScoreKeeper</h1>
+	<h3 class="col-xs-6">Player 1</h3>
+	<h3 class="col-xs-6">Player 2</h3>
+</div>
+
+<div class="container-fluid centerTxt">
+	<div class="col-xs-offset-0">
+		<div class="radio">
+			<h4>Win By 1</h4>
+			<input id="By1" onclick="WinBy1()" type='radio' checked="checked" name="WinBy">
+			<label for="By1"><span class="radio"></span></label>
+		</div>
+		<div class="radio">
+			<h4>Win By 2</h4>
+			<input id="By2" onclick="WinBy2()" type='radio' name="WinBy">
+			<label for="By2"><span class="radio"></span></label>
+		</div>
+	</div>
+</div>
+
+<div class="centerTxt">
+	<p>First one to: <span id="score">Insert below to set score</span></p>
+	<div>
+		<input type="number" id="scoreIn">
+	</div>
+
+</div>
+	
+<div class="container-fluid centerTxt numCont">
+	<div class="rightScore col-xs-6">
+		<span class="score" id="p1Disp">0</span>
+	</div>
+
+	<div class="col-xs-6">
+		<span class="score" id="p2Disp">0</span>
+	</div>
+</div>
+
+<div class="container-fluid centerTxt bottom">
+	<p>Selected Player: <span class="selectedPlayer">Neither</span></p>
+	<p>P1</p>
+	<span class="keyTxt">Decrease Score</span>
+	<img class="keyboard" src="Keyboard.png">
+	<span class="keyTxt">Increase Score</span>
+
+	<p class="p2Txt">P2</p>
+</div>
+
+<h5 class="instr">
+	<ol>
+	<li>Choose whether it is win by 1 or 2</li>
+	<li>Input a score to play to</li>
+	<li>Use the arrow keys to select <br> the player and increment/decrement the score</li>
+	</ol>
+</h5>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript" src="scoreKeeper.js"></script>
+</body>
+</html>

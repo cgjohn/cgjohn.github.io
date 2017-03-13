@@ -26,7 +26,7 @@ $(".scroll").on("click" , function (event) {
         dest = $(document).height() - $(window).height();
     } 
     else {
-        dest = $(this.hash).offset().top;
+        dest = $(this.hash).offset().top - 50;
     }
     //go to destination
     $('html,body').animate({
