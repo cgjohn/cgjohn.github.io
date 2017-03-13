@@ -135,13 +135,15 @@ input[type="radio"]:checked + label span.radio::after {
 
 }
 
-.p2Txt {
+.decTxt {
   margin-top: 5px;
+  font-size: .75em;
 }
 
-.keyTxt {
+.playerTxt {
   position: relative;
   top: 18px;
+  font-size: .75em;
 }
 
 @media(max-width: 1000px){
