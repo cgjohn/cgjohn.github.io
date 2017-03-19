@@ -363,11 +363,15 @@ hr {
 .page-footer {
    position: bottom;
    padding-top: 5px;
-   margin-bottom: 35px;
-   margin-top: 25px;
+   padding-bottom: 110px;
+   padding-top: 25px;
    height: 50px;
    text-align: center;
-   background-color: white;
+   background-color: rgba(69,173,168,.1);;
+}
+
+.icons {
+  padding-bottom: 20px;
 }
 
 
@@ -375,7 +379,9 @@ hr {
   padding-top: 25px; 
   padding-bottom: 25px;
   text-align: center;
-
+  background-color: #fff;
+  /*  background-image: linear-gradient(130deg, #FF8967 -15%, #45ADA8 140%);
+*/
 }
 
 
