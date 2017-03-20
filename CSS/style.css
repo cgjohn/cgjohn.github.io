@@ -108,8 +108,6 @@
 
 }
 
-
-
 .blink{
   opacity: .5;
   /*width: 49px;*/
@@ -387,6 +385,15 @@ hr {
 
 @media(max-width: 768px){
 
+
+  .caption-cont {
+    height: 30vh;
+  }
+
+  .music-caption {
+    margin-top: 30px;
+  }
+
   .accomp-img {
     position: relative;
     top: 3px;
@@ -439,3 +446,4 @@ hr {
     width: 100%;
   }
 }
+
