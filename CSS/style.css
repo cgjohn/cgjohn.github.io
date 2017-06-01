@@ -1,4 +1,4 @@
-* {
+ * {
   box­sizing: border­box;
 }
 
@@ -282,6 +282,10 @@ hr {
 
 .score {
     background-image: url(../Images/Scorekeeper.png);
+}
+
+.flip {
+    background-image: url(../Images/flipGame.png);
 }
 
 
