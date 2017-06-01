@@ -1,0 +1,105 @@
+div {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+.first {
+	margin-left: 37.5%;
+}
+
+section	{
+	height: 100vh;
+	background-color: gray;
+	display:table-cell;
+	vertical-align: middle;
+	width: 100vw;
+}
+
+.halfCircle{
+	position: relative;
+	height:30px;
+	width:60px;
+	border-radius: 90px 90px 0 0;
+	background:rgb(255, 75, 75);
+	border-top: 2px solid black;
+	margin-top: -10px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	transform-style: preserve-3d;
+  	transition: all 0.5s linear;
+}
+
+
+.invisible {
+	opacity: 0;
+}
+
+.played {
+	transform: rotateX(-180deg) translate(-50%, -50%);
+	background-color: rgb(252, 115, 115)
+}
+
+.instructions {
+	width: 25%;
+	font-size: 2em;
+	color: white;
+	position: absolute;
+	transition: all 0.5s linear;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.footer {
+	position: absolute;
+	bottom: 0px;
+}
+
+.icon {
+	position: absolute;
+	font-size: 35px;
+	top: 15px;
+	right: 15px;
+}
+
+button {
+	position: relative;
+	top: 75px;
+	border: none;
+	background-color:rgb(71, 71, 71);
+	border-radius:42px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:16px;
+	padding:16px 21px;
+	text-decoration:none;
+	outline: none;
+	transition: all 0.6s linear;
+}
+
+button:hover {
+	background-color: rgb(61, 61, 61);
+}
+
+button:active {
+	background-color: rgb(41, 41, 41);
+	top: 77px;
+
+}
+
+@media(max-width: 991px) {
+	.first {
+		margin-left: 12.5%
+	}
+	.instructions {
+		font-size: 1.5em;
+		width:60%;
+	}
+	.halfCircle {
+
+	}
+}
+
+

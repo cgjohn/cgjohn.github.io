@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>flip game</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="flip.css">
+</head>
+<body>
+
+	<i class="fa fa-info-circle icon" aria-hidden="true"></i>
+	<i class="fa fa-times-circle icon invisible" aria-hidden="true"></i>
+
+	
+	<section class="container-fluid row ">
+		<div class="instructions invisible">
+			The goal of the game is to not be the last player to flip a game piece.
+		</div>
+		<div class="col-md-1 col-xs-3 first">
+			<div class="halfCircle" id="0"></div>
+			<div class="halfCircle" id="1"></div>
+			<div class="halfCircle" id="2"></div>
+		</div>
+		<div class="col-md-1 col-xs-3">
+			<div class="halfCircle a" id="3"></div>
+			<div class="halfCircle b" id="4"></div>
+			<div class="halfCircle" id="5"></div>
+			<div class="halfCircle" id="6"></div>
+			<div class="halfCircle" id="7"></div>
+		</div>
+		<div class="col-md-1 col-xs-3">
+			<div class="halfCircle" id="8"></div>
+			<div class="halfCircle"id="9"></div>
+			<div class="halfCircle"id="10"></div>
+			<div class="halfCircle"id="11"></div>
+			<div class="halfCircle"id="12"></div>
+			<div class="halfCircle"id="13"></div>
+			<div class="halfCircle"id="14"></div>
+		</div>
+	
+		<div class="col-xs-12">
+			<button onClick="location.reload();">Reset game</button>
+		</div>
+		
+	</section>
+
+	<div class="footer">
+		<h4>Made with <i class="fa fa-beer" aria-hidden="true"></i> and <i class="fa fa-heart" aria-hidden="true"></i></h4>
+	</div>
+
+	<script type="text/javascript" src='flip.js'></script>
+
+</body>
+</html>
