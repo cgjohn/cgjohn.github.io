@@ -165,13 +165,25 @@ $(document).ready(function () {
         and switches back to input field
     */
     resetBtn.addEventListener('click', function(){
+        console.log("reset clicked");
         controlBtn.style.opacity = 0;
         document.querySelector('.inputField').style.opacity = 1;
         document.querySelector('.countdown').style.opacity = 0;
         document.querySelector('.reset').style.opacity = 0;
         clearInterval(interval);
         timeSet = 0;
-        body.style.background = body.style.background.replace(new RegExp('...%', 'g'), '00%')
+        console.log('body background before reset: ', body.style.background)
+        console.log(' background reset action: ', body.style.background.replace(new RegExp('.%', 'g'), '00%'))
+        if(gradient < 10){
+            body.style.background = body.style.background.replace(new RegExp('.%', 'g'), '00%')
+        }
+        else if(gradient > 100){
+            body.style.background = body.style.background.replace(new RegExp('..%', 'g'), '00%')
+        }
+        else {
+            body.style.background = body.style.background.replace(new RegExp('...%', 'g'), '00%')
+        }
+        console.log('body background after reset: ', body.style.background)
         document.querySelector('.number').textContent = '';
         audio.pause();
         audio.currentTime = 0;

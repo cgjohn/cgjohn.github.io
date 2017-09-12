@@ -2,6 +2,10 @@
   box­sizing: border­box;
 }
 
+hr {
+  width: 50%;
+}
+
 .left{
   float: left;
   display: inline-block;
@@ -162,7 +166,6 @@
   text-align: center; 
 }
 
-
 .square {
   height: 200px;
   width: 200px;
@@ -174,7 +177,6 @@
   width: 160px;
   display: inline-block;
 }
-
 
 .nav-link:hover {
   text-decoration: none;
@@ -196,10 +198,6 @@
 #travels {
   text-align: center;
   background-color: rgba(69,173,168,.1);
-}
-
-hr {
-  width: 50%;
 }
 
 .travel {
@@ -260,6 +258,7 @@ hr {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 3px;
 }
 
 .bike {
@@ -288,6 +287,10 @@ hr {
     background-image: url(../Images/flipGame.png);
 }
 
+.timer {
+    background-image: url(../Images/timer.png);
+    border-radius: 30px;
+}
 
 .caption-cont {
   width: 80%;
@@ -301,6 +304,11 @@ hr {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.full_width_caption {
+  width: 50%;
 }
 
 .project-cont {
@@ -318,7 +326,6 @@ hr {
   display: inline-block;
   /*border: 2px solid black;*/
   transition: all .2s;
-
 }
 
 .circle-foot:hover{
@@ -354,13 +361,10 @@ hr {
   background-size: cover;
 }
 
-
-
 .linkedin {
   background-image: url(../Images/linkedin.png);
   background-size: cover;
 }
-
 
 .page-footer {
    position: bottom;
@@ -376,7 +380,6 @@ hr {
   padding-bottom: 20px;
 }
 
-
 #about {
   padding-top: 25px; 
   padding-bottom: 25px;
@@ -386,9 +389,7 @@ hr {
 */
 }
 
-
 @media(max-width: 768px){
-
 
   .caption-cont {
     height: 30vh;
