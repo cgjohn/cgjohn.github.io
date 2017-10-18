@@ -184,6 +184,7 @@ hr {
 }
 
 .square-IX {
+  padding-bottom: 10px;
   position: relative;
   height: 200px;
   width: 200px;
@@ -289,7 +290,6 @@ hr {
 
 .timer {
     background-image: url(../Images/timer.png);
-    border-radius: 30px;
 }
 
 .caption-cont {
@@ -389,6 +389,16 @@ hr {
 */
 }
 
+/*.bottom-tag {
+  background-color: rgba(69,173,168,.1);
+}*/
+
+@media(max-width: 592px){
+  .page-footer{
+    height: 200px;
+  }
+}
+
 @media(max-width: 768px){
 
   .caption-cont {
@@ -439,7 +449,9 @@ hr {
 }
 
 @media(max-width: 1000px){
-
+  .nav-txt {
+    font-size: 15px;
+  }
   .photos {
     margin-top: 10px;
     width: 250px;

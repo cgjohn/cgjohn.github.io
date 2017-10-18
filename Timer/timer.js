@@ -108,9 +108,6 @@ $(document).ready(function () {
                 lastClickedCircle.style.opacity = 1;
                 lastClickedCircle = this;
             }
-   
-            // console.log('colorLeft: ', colorLeft);
-            // console.log('colorRight: ', colorRight);
 
             var clickedColor = this.style.background;
             //decides whether or not to set % to 0 or active %
@@ -120,12 +117,12 @@ $(document).ready(function () {
             else{
                 body.style.background = clickedColor.replace(new RegExp('..%', 'g'), gradient + '%')
             }
-            console.log('setting background to: ', body.style.background);
+            //console.log('setting background to: ', body.style.background);
         });
     }
 
+    //allows the timer to be started through hitting enter
     document.onkeydown = function() {
-
         if(window.event.keyCode == 13){
             start();
         }
