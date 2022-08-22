@@ -11,4 +11,3 @@ jobs:
       with:
         REQUIRED_LABELS_ANY: "next-release"
         REQUIRED_LABELS_ANY_DESCRIPTION: "Must have `next-release` tag to merge to dev"
-        BANNED_LABELS: "banned"
