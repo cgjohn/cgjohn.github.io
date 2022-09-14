@@ -1,0 +1,15 @@
+on:
+  push:
+    branches:
+      - master
+name: release-please
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          changelog-types: '[{ "type": "feat", "section": "Features" },{ "type": "fix", "section": "Bug Fixes" },{ "type": "perf", "section": "Performance Improvements" },{ "type": "deps", "section": "Dependencies" },{ "type": "revert", "section": "Reverts" },{ "type": "docs", "section": "Documentation" },{ "type": "style", "section": "Styles" },{ "type": "chore", "section": "Miscellaneous Chores" },{ "type": "refactor", "section": "Code Refactoring" },{ "type": "test", "section": "Tests" },{ "type": "build", "section": "Build System" },{ "type": "ci", "section": "Continuous Integration" }]'
+          command: manifest
+          pull-request-title-pattern: 'chore: release ${version}'
+          release-type: node
